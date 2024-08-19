@@ -1,5 +1,6 @@
 import { useState } from "react";
 export default function DogDetails({ dog }) {
+  // console.log(props.dog)
   const [showDetails, setShowDetails] = useState(false);
   function toggleDogDetails() {
     setShowDetails(!showDetails);

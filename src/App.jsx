@@ -1,5 +1,7 @@
 import { dogsData } from "./data";
 import { useState } from "react";
+import DogDetails from "./dogDetails";
+
 
 function App() {
   const [dogs, setDogs] = useState(dogsData);
@@ -66,6 +68,7 @@ function App() {
                 >
                   Remove
                 </button>
+                <DogDetails dog={dog}/>
               </li>
             );
           })}
